@@ -29,5 +29,22 @@ public class Repository {
 		return list;
 
 	}
+	
+	public Product getProId(String proId) {
+		Product proById = null;
+		
+		for(int i = 0; i < list.size(); i++) {
+			Product pro = list.get(i);
+			
+			if(pro != null) && (pro.getId() != null) && (pro.getId().equals(proById))){
+				proById = pro;
+				break;
+				
+			}
+		}
+		
+		
+		return proById;
+	}
 
 }
