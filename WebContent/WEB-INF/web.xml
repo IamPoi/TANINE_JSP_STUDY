@@ -22,4 +22,39 @@
   </servlet-mapping>
   
   -->
+	<filter>
+  	<filter-name>filter02</filter-name>
+  	<filter-class>Filter.ParamFilter</filter-class>
+  	
+  	<init-param>
+		<param-name>par1</param-name>
+		<param-value>admin</param-value>  	
+  	</init-param>
+  	<init-param>
+  		<param-name>par2</param-name>
+  		<param-value>1234</param-value>
+  	</init-param>
+  </filter>
+  <filter-mapping>
+  	<filter-name>filter02</filter-name>
+  	<url-pattern>/FilterEx/filter_process.jsp</url-pattern>
+  </filter-mapping>
+
+  
+  <filter>
+  	<filter-name>log_filter</filter-name>
+  	<filter-class>Filter.LogFilter</filter-class>
+  	<init-param>
+  		<param-name>file</param-name>
+  		<param-value>c:\\logs\\monitor.log</param-value>
+  	</init-param>
+  </filter>
+  <filter-mapping>
+  	<filter-name>log_filter</filter-name>
+  	<url-pattern>/FilterEx/filter_process.jsp</url-pattern>
+  </filter-mapping>
+  
+  
+  
+  
 </web-app>
