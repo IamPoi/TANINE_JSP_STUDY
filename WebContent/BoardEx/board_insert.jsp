@@ -8,11 +8,12 @@
 </head>
 <body>
 
+	
 	<form action="BoardInsert.do" method="post">
-		아이디 : <input type = "text" name = "id">
-		이름 : <input type = "text" name = "name">
-		제목 : <input type = "text" name = "sub">
-		내용 : <textarea rows="" cols="" name = "content"></textarea>
+		아이디 : <input type = "text" name = "id"><br>
+		이름 : <input type = "text" name = "name"><br>
+		제목 : <input type = "text" name = "sub"><br>
+		내용 : <textarea rows="" cols="" name = "content"></textarea><br>
 		<input type = "submit">
 	</form>
 
