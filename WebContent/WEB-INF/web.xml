@@ -54,7 +54,20 @@
   	<url-pattern>/FilterEx/filter_process.jsp</url-pattern>
   </filter-mapping>
   
+   
+  <!-- 로그인 Servlet -->
+  <!-- 
+  <servlet>
+  	<servlet-name>Login</servlet-name>
+  	<servlet-class>Service.Login</servlet-class>
+  </servlet>
   
+  <servlet-mapping>
+  	<servlet-name>Login</servlet-name>
+  	<url-pattern>/</url-pattern>
+  </servlet-mapping>
+   -->
   
+   
   
 </web-app>
