@@ -29,9 +29,9 @@ public class Command extends HttpServlet {
 		
 		System.out.println(resultURI);
 		
-		if(resultURI.equals("LoginEx/Login.do")) {
+		if(resultURI.equals("Login.do")) {
 			command = new Login();
-		}else if(resultURI.equals("BoardEx/BoardInsert.do")) {
+		}else if(resultURI.equals("BoardInsert.do")) {
 			command = new BoardInsert();
 		}
 		

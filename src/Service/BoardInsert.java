@@ -35,6 +35,8 @@ public class BoardInsert extends HttpServlet implements FrontCommand {
 	public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		
+		request.setCharacterEncoding("EUC-KR");
+		
 		String id = request.getParameter("id");
 		String name = request.getParameter("name");
 		String sub = request.getParameter("sub");
@@ -47,7 +49,7 @@ public class BoardInsert extends HttpServlet implements FrontCommand {
 		
 		if (cnt != 0) {
 			System.out.println("등록 성공");
-			
+			response.sendRedirect("board.jsp");
 		}
 		
 		

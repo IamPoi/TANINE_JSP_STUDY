@@ -1,14 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
-	pageEncoding="EUC-KR"%>
+    pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="./resources/css/bootstrap.min.css" />
-
-<style>
-
-</style>
 <head>
 <meta charset="EUC-KR">
 <title>Insert title here</title>
@@ -17,21 +10,12 @@
 
 <%@include file = "menu.jsp" %>
 
-	
-
-
-
-
-
-
-
-
-
-
-
+<form action="Login.do" method="post">
+	아이디 : <input type = "text" name = "id">
+	비밀번호 : <input type = "password" name = "pw">
+	<input type = "submit">
+</form>
 
 <%@include file = "footer.jsp" %>
-	
-
 </body>
 </html>

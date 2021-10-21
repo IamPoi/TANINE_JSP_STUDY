@@ -15,8 +15,9 @@
 <nav class="navbar navbar-expand navbar-dark bg-dark">
 		<div class="container">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="./index.jsp">HOME</a> <a
-					class="navbar-brand" href="BoardEx/board_insert.jsp">BOARD</a>
+				<a class="navbar-brand" href="./index.jsp">HOME</a> 
+				<a class="navbar-brand" href="./board_insert.jsp">BOARD</a>
+				<a class="navbar-brand" href="./login.jsp">LOGIN</a>
 
 			</div>
 		</div>

@@ -37,6 +37,8 @@ public class Login extends HttpServlet implements FrontCommand {
 	public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		// TODO Auto-generated method stub
+		
+				request.setCharacterEncoding("EUC-KR");
 				System.out.println("gd");
 				
 				ArrayList<MemberDTO> list = null;

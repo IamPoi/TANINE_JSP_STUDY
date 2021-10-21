@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+	pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
 <html>
 
@@ -7,7 +7,17 @@
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="./resources/css/bootstrap.min.css" />
 
-
+<style>
+footer{ position:fixed; 
+  left:0px; 
+  bottom:0px; 
+  height:50px; 
+  width:100%; 
+  background:#212529; 
+  color: white;
+  text-align: right;
+  }
+</style>
 
 <head>
 <meta charset="EUC-KR">
@@ -20,8 +30,8 @@
 
 
 
-	<footer class = "footer">
-		<div>&copy; WebMarket</div>
+	<footer class="footer">
+		<div class="container">&copy; WebMarket</div>
 	</footer>
 
 </body>

@@ -17,6 +17,7 @@ public class BoardDAO {
 	int cnt = 0;
 	ResultSet rs = null;
 	BoardDTO dto = null;
+	ArrayList<BoardDTO> list = null;
 
 	public void Connection() { // DB ¿¬°á
 		try {
@@ -74,6 +75,43 @@ public class BoardDAO {
 		}
 
 		return cnt;
+	}
+	
+public ArrayList<BoardDTO> Select(){
+		
+		list = new ArrayList<BoardDTO>();
+		
+		Connection();
+		
+		try {
+			String sql = "select * from board";
+			
+			psmt = conn.prepareStatement(sql);
+			rs = psmt.executeQuery();
+			
+			while(rs.next()) {
+				
+				int num = rs.getInt(1);
+				String id = rs.getString(2);
+				String name = rs.getString(3);
+				String sub = rs.getString(4);
+				String content = rs.getString(5);
+				
+				
+				dto = new BoardDTO(num, id, name, sub, content);
+						
+				list.add(dto);
+			}
+			
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			Close();
+
+		}
+		
+		return list;
 	}
 
 }
